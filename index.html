@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QCG IITR - Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.png" alt="QCG IITR Logo" height = 25px>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="intro">
+        <div class="intro-content">
+            <!-- <img src = "about_bg2.webp" alt = "Intro Background" class = "intro-bg">
+              -->
+              <video autoplay muted loop class="video">
+                <source src="intro_vd.mp4" type="video/mp4">
+              </video>
+              
+            <h1 class="intro-title">Welcome to QCG IITR</h1>
+            <p class="intro-description">Providing high-performance computing solutions for research and development.</p>
+            <a href="#about" class="btn1">Learn More</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <img src="qcg2.webp" alt="About Background" class="about_bg">
+        <h2 class = "about-title">About QCG</h2>
+        <p class = "about-description">Quantum Computing Group is a student-run group to inculcate and uplift the culture of quantum computing at IIT Roorkee. 
+            Founded in 2020, QCG is currently a part of ACM IIT Roorkee Student Chapter. 
+            Our members have varied interests and skills in different domains of quantum computing and attempt to
+             elevate the technological standing of the campus populace in those specialisations. We do so by organising concept discussions, 
+            hands-on workshops, 
+            open projects and an 
+            annual quantum computing hackathon that gives the students exposure to the advancements in the quantum computing sphere.</p>
+            <!-- <img src ="instagram-3.png" alt = "instagram" class = "social"> -->
+    </section>
+
+    <section id = "features" class="features">
+        <img src = "qcg1.webp" alt = "Features Background" class = "features_bg">
+        <h2 class = "features-title">Our Initiatives</h2>
+        <div class = "cards">
+        <div class="feature-card1">
+            <h4>Discussions</h4>
+            <p class = "content">We conduct regular discussions 
+                on various topics of
+                quantum computing, open 
+                for all our quantum enthusiasts.</p>
+        </div>
+        <div class="feature-card2">
+            <h4>Blog</h4>
+            <p class = "content">Check out the blogs written by our members, 
+                exploring different concepts in quantum computing.</p>
+        </div>
+        <div class="feature-card3">
+            <h4>Projects</h4>
+            <p class = "content">We have a collection of open-source projects that
+        </div>
+        <div class="feature-card4">
+            <h4>Workshops</h4>
+            <p class = "content">We organise hands-on workshops on various topics of 
+                quantum computing, 
+                open to all our members.</p>
+        </div>
+        <div class="feature-card5">
+            <h4>Hackathon</h4>            
+            <p class = "content">We host an annual  
+                hackathon that gives students exposure to the advancements in the quantum computing sphere.</p>
+        </div>
+        <div class="feature-card6">
+            <h4>Events</h4>
+            <p class = "content">We organise events such as 
+                QCG IITR Expo,
+                QCG IITR Hackathon, etc.</p>
+        </div>
+        </div>
+    </section>
+
+    <section id = "contact" class="contact">
+        <h2 class = "contact-title">Contact Us</h2>
+        <img src ="qcg5.webp" alt = "Contact Background" class = "contact_bg">
+        <div class = "contact-info">
+            <div class = "insta" >
+             <a href = "https://www.instagram.com/qcgiitr/">
+                <img src = "instagram-3.png" alt = "instagram" class = "social" height = 50px width = 50px>
+             </a>
+            </div>
+
+            <div class = "linkedin" >
+                <a href = "https://www.linkedin.com/company/qcgiitr/">
+                   <img src = "linkedin (1).png" alt = "instagram" class = "social" height = 50px width = 50px>
+                </a>
+               </div>
+
+            <div class = "twitter" >
+                <a href = "https://x.com/qcgiitr?mx=2">
+                   <img src = "twitter.png" alt = "instagram" class = "social" height = 50px width = 50px>
+                </a>
+               </div>
+
+            <div class = "facebook" >
+                <a href = "https://www.facebook.com/qcgiitr/">
+                   <img src = "facebook.png" alt = "instagram" class = "social" height = 50px width = 50px>
+                </a>
+               </div>
+            </div>
+
+            <div class = "medium" >
+                <a href = "https://medium.com/@qcgiitr">
+                    <img src = "medium.png" alt = "instagram" class = "social" height = 50px width = 50px>
+                </a>
+            </div>
+        </div>
+            
+    </section>
+
+
+    <div class="chatbot-icon" onclick="toggleChatbot()">
+        <img src = "chatbot.png" height = 40px width="40px">
+    </div>
+
+
+    <div class="chatbot-container" id="chatbot">
+        <div class="chatbot-header">Chatbot</div>
+        <div class="chatbot-messages" id="chatbox"></div>
+        <div class="chatbot-input">
+            <input type="text" id="userInput" placeholder="Ask me something...">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+
+    
+
+
+    <footer>
+        <p class="copyright">&copy; 2024 QCG IITR. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+</html>
